@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GlobalStyles from "../styles/global";
 import Head from "next/head";
 import Navbar from "./navbar";
-import Footer from "../components/Footer";
+import Footer from "./footer";
 
 const Layout = ({children}) => {
     return (
