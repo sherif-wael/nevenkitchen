@@ -1,10 +1,25 @@
+import React, {useEffect} from "react";
 import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import Layout from "../components/layout";
+import About from "../components/about";
+import Intro from "../components/Intro";
+import Feed from "../components/Feed";
+import Gallery from "../components/gallery";
+import Head from "next/head";
 
 export default function Home() {
-  return <Title>My page</Title>
+  useEffect(() => {
+    fetch("/api/home");
+  }, [])
+  return (
+    <Layout>
+        <Head>
+          <title>Neven's Kitchen - home page</title>
+        </Head>
+        <About />
+        <Intro />
+        <Feed />
+        <Gallery />
+    </Layout>
+  )
 }
