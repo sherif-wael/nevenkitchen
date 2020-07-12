@@ -2,8 +2,8 @@ import React, {useEffect} from "react";
 import styled from 'styled-components'
 import Layout from "../components/layout";
 import About from "../components/about";
-import Intro from "../components/Intro";
-import Feed from "../components/Feed";
+import Intro from "../components/intro";
+import Feed from "../components/feed";
 import Gallery from "../components/gallery";
 import Head from "next/head";
 
