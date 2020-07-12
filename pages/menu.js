@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import mixins from "../styles/mixins";
 import media from "../styles/media";
+import Layout from "../components/layout";
 
 const StyledContainer = styled.section`
     ${mixins.flexCenter};
@@ -18,8 +19,10 @@ const StyledContainer = styled.section`
 
 export default function Menu(){
     return (
-        <StyledContainer>
-            Coming Soon...
-        </StyledContainer>
+        <Layout>
+            <StyledContainer>
+                Coming Soon...
+            </StyledContainer>
+        </Layout>
     )
 }
